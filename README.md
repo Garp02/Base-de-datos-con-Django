@@ -31,9 +31,13 @@ rápidas del mundo:
 | **Sistema operativo** | Sistema operativo utilizado |
 
 2. Funciones:
+
   a. Agregar
+  
   b. Editar
+  
   c. Borrar
+  
   d. Visualizar
 
 3. Verificar el buen funcionamiento de lo que se pide en el proyecto.
