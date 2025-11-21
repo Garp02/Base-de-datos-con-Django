@@ -32,12 +32,12 @@ rápidas del mundo:
 
 2. Funciones:
 
-  a. Agregar
+    a. Agregar
   
-  b. Editar
+    b. Editar
   
-  c. Borrar
+    c. Borrar
   
-  d. Visualizar
+    d. Visualizar
 
 3. Verificar el buen funcionamiento de lo que se pide en el proyecto.
