@@ -1,4 +1,4 @@
-#Proyecto final. Base de datos con Django
+# Proyecto final. Base de datos con Django
 
 ## Equipo 5
 - Esquivel Palacios Leonardo de Jesús
