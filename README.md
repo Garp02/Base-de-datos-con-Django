@@ -3,7 +3,6 @@
 ## Equipo 5
 - Esquivel Palacios Leonardo de Jesús
 - Esteva Gallegos Carlos Fabián
-- López González Andrés
 - Munive Ramírez Ibrahim
 - Pérez Aguiar Oropeza Gabriel Emiliano
 - Riós Pérez Fany
