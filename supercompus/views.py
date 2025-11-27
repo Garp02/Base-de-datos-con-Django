@@ -30,7 +30,7 @@ def agregar_computadora(request):
 # Editar
 def editar_computadora(request, id):
 
-    computadora = get_object_or_404(TuModelo, id = id)
+    computadora = get_object_or_404(Sistemascomputo, id = id)
     
     if request.method == 'POST':
         
@@ -51,7 +51,7 @@ def editar_computadora(request, id):
 # Borrar
 def borrar_computadora(request, id):
 
-    computadora = get_object_or_404(TuModelo, id = id)
+    computadora = get_object_or_404(Sistemascomputo, id = id)
     
     if request.method == 'POST':
     
