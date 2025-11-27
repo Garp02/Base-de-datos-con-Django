@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Supercomputadoras</title>
+    <link rel="stylesheet" href="{% static 'estilo_general.css' %}">
+    
+</head>
+<body>
+
+    <h1>Supercomputadoras Registradas</h1>
+
+    <a href="{% url 'agregar_computadora' %}" class="btn-agregar">Agregar nueva</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>País de origen</th>
+                <th>RAM (TB)</th>
+                <th>ROM (TB)</th>
+                <th>TeraFLOPS</th>
+                <th>Sistema Operativo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for comp in computadoras %}
+            <tr>
+                <td>{{ comp.nombre }}</td>
+                <td>{{ comp.pais_origen }}</td>
+                <td>{{ comp.ram }}</td>
+                <td>{{ comp.rom }}</td>
+                <td>{{ comp.flops }}</td>
+                <td>{{ comp.so }}</td>
+
+                <td>
+                    <a class="btn-accion btn-editar" href="{% url 'editar_computadora' comp.id %}">Editar</a>
+                    <a class="btn-accion btn-borrar" href="{% url 'borrar_computadora' comp.id %}">Borrar</a>
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="7">No hay supercomputadoras registradas.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>

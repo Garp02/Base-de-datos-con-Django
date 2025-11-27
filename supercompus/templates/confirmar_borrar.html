@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmar eliminación</title>
+    <style>
+        body {
+            font-family: Inter, sans-serif;
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            background: linear-gradient(145deg, #284eceff, #016d80ff);
+        }
+
+        h1 {
+            margin-top: 40px;
+        }
+
+        .detalle {
+            background-color: #727272e1;
+            padding: 15px;
+            margin: 20px auto;
+            width: 70%;
+            border-radius: 16px;
+            border: 1px solid #ccc;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-borrar {
+            background-color: #d9534f;
+            color: white;
+            margin-right: 10px;
+        }
+
+        .btn-cancelar {
+            background-color: #b100e7ff;
+            color: white;
+        }
+
+        form {
+            display: inline-block;
+            border-radius: 16px;
+        }
+    </style>
+    
+
+</head>
+<body>
+
+    <h1>¿Eliminar esta supercomputadora?</h1>
+
+    <div class="detalle">
+        <p><strong>Nombre:</strong> {{ computadora.nombre }}</p>
+        <p><strong>País de origen:</strong> {{ computadora.pais_origen }}</p>
+        <p><strong>RAM:</strong> {{ computadora.ram }} TB</p>
+        <p><strong>ROM:</strong> {{ computadora.rom }} TB</p>
+        <p><strong>FLOPS:</strong> {{ computadora.flops }} TeraFLOPS</p>
+        <p><strong>Sistema operativo:</strong> {{ computadora.so }}</p>
+    </div>
+
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-borrar">Eliminar</button>
+    </form>
+
+    <a href="{% url 'lista_computadoras' %}" class="btn btn-cancelar">Cancelar</a>
+
+</body>
+</html>
