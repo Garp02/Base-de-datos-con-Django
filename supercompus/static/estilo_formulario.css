@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 60%;
+    margin: auto;
+    background: linear-gradient(45deg, #d16221ff, #6314bdff);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    margin-top: 25px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-guardar {
+    background-color: #28a745;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-cancelar {
+    background-color: #dc3545;
+    color: white;
+}
+
+.contenedor-botones {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.error-campo {
+    color: red;
+    font-size: 14px;
+    margin-top: 15px;
+}
